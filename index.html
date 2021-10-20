@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fieldset</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="firstname"  id="fname">
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lastname" id="lname">
+                </div>
+                <div>
+                    <label for="date">Date Of Birth</label>
+                    <input type="date" name="dob" id="date">
+                </div>
+                <div>
+                    <label>Gender</label>
+                      <div>
+                        <label for="M">Male</label>
+                        <input type="radio" name="gender" value="male" id="M">
+                       </div>
+                     <div>
+                        <label for="F">Female</label>
+                        <input type="radio" name="gender" value="female" id="F" checked>
+                     </div>
+                </div>
+                <div>
+                    <label for="B">BIO</label>
+                    <textarea name="bio" value="bio" id="B"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Educational Information</legend>
+                <div>
+                    <label for="scl">School</label>
+                    <input type="text" name="school" id="scl">
+                </div>
+                <div>
+                    <label for="u">University</label>
+                    <select name="university" id="u">
+                        <option value="RGPV">Rajiv Gandhi Prodyougiki vishv vidhyalya</option>
+                        <option value="UU" selected>Ujjain University</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Hobbies</legend>
+                <div>
+                    <label for="code">Coding</label>
+                    <input type="checkbox" value="coding" name="coding" id="code">
+                </div>
+                <div>
+                    <label for="trav">Travelling</label>
+                    <input type="checkbox" name="travel" value="travelling" id="trav">
+                </div>
+                <div>
+                    <label for="sing">Singing</label>
+                    <input type="checkbox" id="sing" name="singing" value="singing">
+                </div>
+                <div>
+                    <label for="dance">Dancing</label>
+                    <input type="checkbox" id="dance" name="dance" value="dance" >
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" name="submit" value="SUBMIT">
+            </div>
+        </form>
+    </body>
+    </html>
